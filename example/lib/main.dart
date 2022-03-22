@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:io';
-import 'package:flutter_pdfview_professor/flutter_pdfview.dart';
+import 'package:flutter_pdfview_professor/flutter_pdfview_professor.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
