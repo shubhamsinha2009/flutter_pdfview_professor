@@ -1,5 +1,6 @@
 package io.professor.plugins.pdfviewflutter;
 
+
 import android.content.Context;
 import android.view.View;
 import android.net.Uri;
@@ -20,6 +21,7 @@ import com.github.barteksc.pdfviewer.PDFView.Configurator;
 import com.github.barteksc.pdfviewer.listener.*;
 import com.github.barteksc.pdfviewer.util.Constants;
 import com.github.barteksc.pdfviewer.util.FitPolicy;
+import com.github.barteksc.pdfviewer.scroll.DefaultScrollHandle;
 
 import com.github.barteksc.pdfviewer.link.LinkHandler;
 
@@ -61,6 +63,7 @@ public class FlutterPDFView implements PlatformView, MethodCallHandler {
                     .enableAnnotationRendering(true)
                     .linkHandler(linkHandler).
                     enableAntialiasing(false)
+                    .scrollHandle(new DefaultScrollHandle(context))
                     // .fitEachPage(getBoolean(params,"fitEachPage"))
                     .onPageChange(new OnPageChangeListener() {
                         @Override

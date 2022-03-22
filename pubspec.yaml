@@ -1,6 +1,6 @@
 name: flutter_pdfview_professor
 description: A Flutter plugin that provides a PDFView widget on Android.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/shubhamsinha2009/flutter_pdfview_professor
 
 environment:
